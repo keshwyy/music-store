@@ -1,4 +1,4 @@
-// Product data for this browser-only shop. Prices and stock are illustrative.
+// Product data for this browser-only shop. Prices and stock are for reference.
 const products = [
   {
     "id": "fender-player-ii",
@@ -270,7 +270,7 @@ function updateHeaderCounters() {
     if (oldLogout) oldLogout.remove();
     const label = trigger.querySelector('.account-label');
     if (!label) return;
-    label.textContent = currentUser ? currentUser.name : 'Demo profile';
+    label.textContent = currentUser ? currentUser.name : 'Guest';
     if (currentUser) {
       trigger.removeAttribute('data-bs-toggle');
       trigger.removeAttribute('data-bs-target');
@@ -490,7 +490,7 @@ if (catalogGrid) {
     document.querySelector('.catalog-intro h1').textContent = product.name;
     document.querySelector('.breadcrumbs span:last-child').textContent = product.name;
     panel.hidden = false;
-    panel.innerHTML = `<article class="product-detail-card"><img src="${product.image}" alt="${product.name}"><div><p class="eyebrow">${product.brand} · ${product.kind}</p><h2>${product.name}</h2><p class="price">${money(product.priceEUR)}</p><p class="stock ${product.inStock ? '' : 'out-of-stock'}">${product.inStock ? 'In stock' : 'Currently unavailable'}</p><p>Demo listing. Product specifications, reviews and availability should be confirmed with the retailer.</p><div class="d-flex gap-2"><button class="btn btn-primary add-cart" data-add-id="${product.id}" ${product.inStock ? '' : 'disabled'}>Add to basket</button><button class="btn btn-outline-dark" data-wishlist-id="${product.id}" aria-pressed="${getWishlist().includes(product.id)}">${getWishlist().includes(product.id) ? 'Saved to wishlist' : 'Save to wishlist'}</button></div></div></article>`;
+    panel.innerHTML = `<article class="product-detail-card"><img src="${product.image}" alt="${product.name}"><div><p class="eyebrow">${product.brand} · ${product.kind}</p><h2>${product.name}</h2><p class="price">${money(product.priceEUR)}</p><p class="stock ${product.inStock ? '' : 'out-of-stock'}">${product.inStock ? 'In stock' : 'Currently unavailable'}</p><p>Product specifications, reviews and availability should be confirmed with the retailer.</p><div class="d-flex gap-2"><button class="btn btn-primary add-cart" data-add-id="${product.id}" ${product.inStock ? '' : 'disabled'}>Add to basket</button><button class="btn btn-outline-dark" data-wishlist-id="${product.id}" aria-pressed="${getWishlist().includes(product.id)}">${getWishlist().includes(product.id) ? 'Saved to wishlist' : 'Save to wishlist'}</button></div></div></article>`;
     bindProductActions(panel);
   }
   if (detailProduct) {
@@ -561,7 +561,7 @@ document.querySelector('#checkout-form')?.addEventListener('submit', event => {
   const subtotal = getCart().reduce((sum, line) => sum + (byId(line.id)?.priceEUR || 0) * line.quantity, 0), shipping = subtotal === 0 || subtotal >= 150 ? 0 : 8.99;
   savedOrders.push({ id: orderId, placedAt: new Date().toISOString(), email: String(new FormData(form).get('email') || ''), total: subtotal + shipping, items: getCart() });
   writeStore('orders', savedOrders); writeStore('cart', []); updateHeaderCounters(); form.hidden = true;
-  message.textContent = `Demo order ${orderId} saved in this browser. No payment was taken.`;
+  message.textContent = `Order ${orderId} saved in this browser. No payment was taken.`;
   document.querySelector('.checkout-summary h2').textContent = 'Thank you for your order'; renderOrderHistory();
 });
 
