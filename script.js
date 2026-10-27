@@ -136,7 +136,7 @@ const products = [
     "description": "Compact guitar combo amplifier for home practice and small-room recording.",
     "priceEUR": 179,
     "featured": false,
-    "image": "https://images.unsplash.com/photo-1593078166039-c987c1e2b7b0?auto=format&fit=crop&w=750&q=85",
+    "image": "https://images.unsplash.com/photo-1581378576936-9b10bb143de8?auto=format&fit=crop&w=750&q=85",
     "inStock": false,
     "rating": "4.8",
     "reviews": 32,
@@ -154,7 +154,7 @@ const products = [
     "description": "Desktop guitar amplifier built for quiet practice and direct recording workflows.",
     "priceEUR": 299,
     "featured": false,
-    "image": "https://images.unsplash.com/photo-1598653222000-6b7b7a552625?auto=format&fit=crop&w=750&q=85",
+    "image": "https://images.unsplash.com/photo-1516575869513-3f418f8902ca?auto=format&fit=crop&w=750&q=85",
     "inStock": true,
     "rating": "4.9",
     "reviews": 25,
@@ -426,6 +426,9 @@ if (catalogGrid) {
   const resultCount = document.querySelector('#result-count'); const sortSelect = document.querySelector('#catalog-sort');
   const brandChecks = [...document.querySelectorAll('.catalog-filter')]; const categoryChecks = [...document.querySelectorAll('.subcategory-filter')];
   const stockCheck = document.querySelector('#in-stock');
+  const params = new URLSearchParams(location.search);
+  let searchQuery = (params.get('q') || '').trim().toLowerCase();
+  let selectedCategory = params.get('category') || '';
   const rate = currencyRates[selectedCurrency];
   priceRange.max = String(Math.round(2000 * rate));
   priceRange.step = selectedCurrency === 'UAH' ? '1000' : '25';
@@ -435,7 +438,7 @@ if (catalogGrid) {
     const brands = brandChecks.filter(input => input.checked).map(input => input.value.toLowerCase());
     const kinds = categoryChecks.filter(input => input.checked).map(input => input.value);
     const ceiling = Number(priceRange.value) / rate;
-    const visible = catalogProductIds.map(byId).filter(product => product && product.priceEUR <= ceiling && (!brands.length || brands.includes(product.brand.toLowerCase())) && (!kinds.length || kinds.includes(product.kind)) && (!searchQuery || `${product.brand} ${product.name} ${product.kind}`.toLowerCase().includes(searchQuery)) && (!stockCheck.checked || product.inStock));
+    const visible = catalogProductIds.map(byId).filter(product => product && product.priceEUR <= ceiling && (!selectedCategory || product.category === selectedCategory) && (!brands.length || brands.includes(product.brand.toLowerCase())) && (!kinds.length || kinds.includes(product.kind)) && (!searchQuery || `${product.brand} ${product.name} ${product.kind}`.toLowerCase().includes(searchQuery)) && (!stockCheck.checked || product.inStock));
   const sorters = {
     'price-asc': (firstProduct, secondProduct) => firstProduct.priceEUR - secondProduct.priceEUR,
     'price-desc': (firstProduct, secondProduct) => secondProduct.priceEUR - firstProduct.priceEUR,
@@ -468,11 +471,7 @@ if (catalogGrid) {
     renderCatalog();
     applyLanguage();
   });
-  const params = new URLSearchParams(location.search);
-  let searchQuery = (params.get('q') || '').trim().toLowerCase();
   if (document.querySelector('#search')) document.querySelector('#search').value = params.get('q') || '';
-  let selectedCategory = params.get('category');
-  categoryChecks.forEach(input => { input.checked = input.value === selectedCategory; });
   if (searchQuery) document.querySelector('.catalog-intro > p:last-child').textContent = `Search results for “${params.get('q')}”.`;
   const categoryName = { guitar: 'Guitars & gear', studio: 'Studio & recording', keys: 'Keyboards & pianos', drums:'Drums', accessories:'Accessories' }[selectedCategory];
   if (categoryName) {
