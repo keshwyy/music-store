@@ -1082,12 +1082,6 @@ footer .logo {
   cursor: pointer;
 }
 
-.checkout-form-panel>p {
-  font-size: 13px;
-  color: #747881;
-  margin: 0 0 14px;
-}
-
 .checkout-form-panel textarea {
   width: 100%;
   min-height: 96px;
