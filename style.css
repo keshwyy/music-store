@@ -734,6 +734,8 @@ footer .logo {
 }
 
 .cart-drawer {
+  --bs-offcanvas-bg: #fff;
+  --bs-offcanvas-color: var(--amplify-ink);
   width: min(440px,100%)!important;
 }
 
@@ -1059,12 +1061,62 @@ footer .logo {
   font-weight: 700;
 }
 
-.checkout-form-panel form>fieldset>label {
+.checkout-form-panel form>label {
   display: grid;
   gap: 6px;
   font-size: 12px;
   font-weight: 600;
-  margin: 10px 0;
+  margin: 12px 0;
+}
+
+.checkout-form-panel form>fieldset>label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--amplify-line);
+  border-radius: 6px;
+  padding: 12px;
+  margin: 10px 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.checkout-form-panel>p {
+  font-size: 13px;
+  color: #747881;
+  margin: 0 0 14px;
+}
+
+.checkout-form-panel textarea {
+  width: 100%;
+  min-height: 96px;
+  border: 1px solid #dfe1e5;
+  border-radius: 5px;
+  padding: 10px 11px;
+  font: inherit;
+  font-size: 12px;
+  background: #fff;
+  color: var(--amplify-ink);
+  resize: vertical;
+}
+
+.order-history {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--amplify-line);
+}
+
+.order-history h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.order-history-list p {
+  font-size: 12px;
+  color: #555b65;
+  margin: 0 0 6px;
 }
 
 .checkout-summary h2 {
