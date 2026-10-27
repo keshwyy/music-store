@@ -224,6 +224,7 @@ try { localStorage.removeItem('users'); } catch { /* Storage can be unavailable 
 const money = (value, currency = selectedCurrency) => new Intl.NumberFormat(({en:'en-IE',ru:'ru-RU',uk:'uk-UA'})[selectedLanguage], {
   style: 'currency',
   currency,
+  currencyDisplay: 'narrowSymbol',
   maximumFractionDigits: 0
 }).format(value * (currency === 'EUR' ? 1 : currencyRates[currency] || 1));
 const toast = document.querySelector('.toast');
@@ -312,7 +313,9 @@ function addToCart(id, quantity = 1) {
   else cart.push({ id, quantity: Math.max(1, quantity) });
   writeStore('cart', cart.filter(item => item.quantity > 0));
   updateHeaderCounters();
-  showToast(`${byId(id).name} added to your basket`);
+  const cartDrawer = document.querySelector('#cartDrawer');
+  if (cartDrawer && window.bootstrap) bootstrap.Offcanvas.getOrCreateInstance(cartDrawer).show();
+  else showToast(`${byId(id).name} added to your basket`);
 }
 
 function changeCartQuantity(id, delta) {
