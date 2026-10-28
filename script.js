@@ -600,6 +600,21 @@ const languageCopy = {
     newsletter: 'Новини, нові товари та корисні добірки.', checkoutLabel: 'ОФОРМЛЕННЯ ЗАМОВЛЕННЯ', checkout: 'Оформлення замовлення', saveOrder: 'Підтвердити замовлення'
   }
 };
+// Swaps in translations (translations.js) for the information pages, newsletter block and footer.
+function applyPageCopy() {
+  const dict = window.pageCopy?.[selectedLanguage];
+  if (!dict) return;
+  document.querySelectorAll('footer *, .newsletter *, .info-main *').forEach(element => {
+    if (!element.isConnected) return;
+    const translated = dict[element.innerHTML.trim()];
+    if (translated !== undefined) element.innerHTML = translated;
+  });
+  document.querySelectorAll('footer [placeholder], .newsletter [placeholder]').forEach(input => {
+    const translated = dict[input.getAttribute('placeholder')];
+    if (translated !== undefined) input.setAttribute('placeholder', translated);
+  });
+  if (dict[document.title] !== undefined) document.title = dict[document.title];
+}
 function applyLanguage() {
   document.documentElement.lang = selectedLanguage;
   const copy = languageCopy[selectedLanguage];
@@ -636,6 +651,7 @@ function applyLanguage() {
   }
   const wishlistHeading = document.querySelector('.wishlist-content h1'); if (wishlistHeading) wishlistHeading.firstChild.textContent = `${copy.wishlist} `;
   const checkoutSummary = document.querySelector('.checkout-summary h2'); if (checkoutSummary) checkoutSummary.textContent = document.querySelector('#checkout-form')?.hidden ? 'Thank you for your order' : copy.checkout;
+  applyPageCopy();
 }
 document.querySelectorAll('#language-select').forEach(select => select.addEventListener('change', () => {
   selectedLanguage = select.value;
