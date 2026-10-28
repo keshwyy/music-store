@@ -600,6 +600,7 @@ a {
 }
 
 .newsletter {
+  padding: 44px 0;
   color: white;
   background: #1268ca repeating-linear-gradient(116deg,transparent 0 62px,rgba(255,255,255,.08) 63px 65px,transparent 66px 130px);
 }
@@ -635,6 +636,7 @@ a {
 }
 
 footer {
+  padding: 40px 0 24px;
   background: #15171a;
   color: #b3b5bb;
 }
