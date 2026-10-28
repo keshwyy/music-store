@@ -10,7 +10,7 @@ const products = [
     "description": "Versatile Stratocaster-style electric guitar with a comfortable modern neck and three single-coil pickups.",
     "priceEUR": 749,
     "featured": true,
-    "image": "https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?auto=format&fit=crop&w=750&q=85",
+    "image": "https://media.sweetwater.com/m/products/image/5f4c106346MmYdpNO2GN02BAVwycn7v7GwvFda56.wm-lh.jpg?ha=5f4c1063467ce0efb8615f95cdd754a3bdfd2671&quality=82&width=750",
     "inStock": true,
     "rating": "4.9",
     "reviews": 124,
@@ -28,7 +28,7 @@ const products = [
     "description": "Powered nearfield monitor for detailed playback in a home or project studio.",
     "priceEUR": 329,
     "featured": true,
-    "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=750&q=85",
+    "image": "https://m.media-amazon.com/images/I/81d94EqS5hL._AC_SY300_SX300_QL70_FMwebp_.jpg",
     "inStock": true,
     "rating": "4.8",
     "reviews": 86,
@@ -46,7 +46,7 @@ const products = [
     "description": "Broadcast-style dynamic microphone suited to voice recording and spoken-word production.",
     "priceEUR": 389,
     "featured": true,
-    "image": "https://images.unsplash.com/photo-1598653222000-6b7b7a552625?auto=format&fit=crop&w=750&q=85",
+    "image": "https://products.shureweb.eu/cdn-cgi/image/width=1380,height=1380,format=auto/shure_product_db/product_main_images/files/3ac/40e/15-/original/cb0c8564fc691fe2ff3d2b67889ab1c2.webp",
     "inStock": true,
     "rating": "4.7",
     "reviews": 53,
@@ -64,7 +64,7 @@ const products = [
     "description": "Compact digital piano with weighted keys for home practice and performance.",
     "priceEUR": 649,
     "featured": true,
-    "image": "https://images.unsplash.com/photo-1593078166039-c987c1e2b7b0?auto=format&fit=crop&w=750&q=85",
+    "image": "https://media.sweetwater.com/m/products/image/2c7182cc8c92ZtHqJwD36c7GO2UpDhL67XuUhLld.jpg?ha=2c7182cc8cc0f57b351a8f56b0687c311ca1c985&quality=82&width=750",
     "inStock": false,
     "rating": "4.8",
     "reviews": 41,
@@ -73,16 +73,16 @@ const products = [
     "old": null
   },
   {
-    "id": "gibson-les-paul-studio",
+    "id": "gibson-les-paul-session",
     "sku": "GIB-LPS-001",
     "brand": "Gibson",
-    "name": "Les Paul Studio Electric Guitar",
+    "name": "Les Paul Studio Session",
     "kind": "Electric guitar",
     "category": "guitar",
     "description": "Single-cut electric guitar design with a solid body and dual humbucking pickups.",
-    "priceEUR": 1379,
+    "priceEUR": 1749,
     "featured": true,
-    "image": "https://images.unsplash.com/photo-1550291652-6ea9114a47b1?auto=format&fit=crop&w=750&q=85",
+    "image": "https://media.sweetwater.com/m/products/image/6a46b903ddxWXthL6kJj7TLdYe7B39ceE4tHkDrY.wm-lh.jpg?ha=6a46b903dd9a9120643793771c1b0b38d7bfa8d3&quality=82&width=750",
     "inStock": true,
     "rating": "4.9",
     "reviews": 28,
@@ -91,21 +91,21 @@ const products = [
     "old": null
   },
   {
-    "id": "yamaha-pacifica-112v",
-    "sku": "YAM-PAC112-001",
-    "brand": "Yamaha",
-    "name": "Pacifica 112V Electric Guitar",
+    "id": "evh-frankie1",
+    "sku": "EVH-FRANKIE001",
+    "brand": "EVH",
+    "name": "Striped Series Frankenstein Relic Electric Guitar",
     "kind": "Electric guitar",
     "category": "guitar",
     "description": "HSS pickup configuration makes this electric guitar a flexible option for varied styles.",
-    "priceEUR": 319,
+    "priceEUR": 1899,
     "featured": true,
-    "image": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=750&q=85",
+    "image": "https://www.fmicassets.com/Damroot/EVHPDP/10001/5107900503_gtr_frt_001_rr.png",
     "inStock": true,
     "rating": "4.8",
-    "reviews": 67,
-    "popular": 78,
-    "tag": "",
+    "reviews": 196,
+    "popular": 95,
+    "tag": "BESTSELLER",
     "old": null
   },
   {
@@ -118,7 +118,7 @@ const products = [
     "description": "Accessible double-cut electric guitar designed for comfortable everyday playing.",
     "priceEUR": 369,
     "featured": false,
-    "image": "https://images.unsplash.com/photo-1525201548942-d8732f6617a0?auto=format&fit=crop&w=750&q=85",
+    "image": "https://www.ibanez.com/common/product_artist_file/file/p_region_AZES40_TUN_1P_01_sub_1.jpg",
     "inStock": true,
     "rating": "4.7",
     "reviews": 19,
@@ -136,7 +136,7 @@ const products = [
     "description": "Compact guitar combo amplifier for home practice and small-room recording.",
     "priceEUR": 179,
     "featured": false,
-    "image": "https://images.unsplash.com/photo-1593078166039-c987c1e2b7b0?auto=format&fit=crop&w=750&q=85",
+    "image": "https://www.fender.com/cdn-cgi/image/format=auto,resize=height=auto,width=850/https://www.fmicassets.com/Damroot/eCommPNG/10001/2311100000_amp_frt_001_nr.png",
     "inStock": false,
     "rating": "4.8",
     "reviews": 32,
@@ -154,7 +154,7 @@ const products = [
     "description": "Desktop guitar amplifier built for quiet practice and direct recording workflows.",
     "priceEUR": 299,
     "featured": false,
-    "image": "https://images.unsplash.com/photo-1598653222000-6b7b7a552625?auto=format&fit=crop&w=750&q=85",
+    "image": "https://media.sweetwater.com/m/products/image/49f0def9abLlNpf1vaRT9HegunQVmcCMcj8bhECN.jpg?ha=49f0def9ab1ccc5e1b8617882f5a0fe3b26aa9b3&quality=82&width=750",
     "inStock": true,
     "rating": "4.9",
     "reviews": 25,
@@ -172,7 +172,7 @@ const products = [
     "description": "Compact overdrive pedal inspired by a classic mid-focused guitar effect.",
     "priceEUR": 79,
     "featured": false,
-    "image": "https://images.unsplash.com/photo-1558098329-a11cff621064?auto=format&fit=crop&w=750&q=85",
+    "image": "https://media.sweetwater.com/m/products/image/3e86a2cf25PKzyXSbqANzuVzPsFTeChspeByngpR.jpg?ha=3e86a2cf255bd950e1662cae324f23fb6b95aaca&quality=82&width=320",
     "inStock": true,
     "rating": "4.8",
     "reviews": 44,
@@ -190,7 +190,7 @@ const products = [
     "description": "Guitar reverb pedal for adding room, plate, and ambient-style depth.",
     "priceEUR": 139,
     "featured": false,
-    "image": "https://images.unsplash.com/photo-1594435911283-7c2e57f9b2a9?auto=format&fit=crop&w=750&q=85",
+    "image": "https://media.sweetwater.com/m/products/image/e5aefe53045AIIyyrmv0pF5YOS88hUjB8Cet8erd.jpg?ha=e5aefe53042d918bd4385035484d4e9edaf65d04&quality=82&width=400",
     "inStock": true,
     "rating": "4.7",
     "reviews": 17,
@@ -224,6 +224,7 @@ try { localStorage.removeItem('users'); } catch { /* Storage can be unavailable 
 const money = (value, currency = selectedCurrency) => new Intl.NumberFormat(({en:'en-IE',ru:'ru-RU',uk:'uk-UA'})[selectedLanguage], {
   style: 'currency',
   currency,
+  currencyDisplay: 'narrowSymbol',
   maximumFractionDigits: 0
 }).format(value * (currency === 'EUR' ? 1 : currencyRates[currency] || 1));
 const toast = document.querySelector('.toast');
@@ -312,7 +313,9 @@ function addToCart(id, quantity = 1) {
   else cart.push({ id, quantity: Math.max(1, quantity) });
   writeStore('cart', cart.filter(item => item.quantity > 0));
   updateHeaderCounters();
-  showToast(`${byId(id).name} added to your basket`);
+  const cartDrawer = document.querySelector('#cartDrawer');
+  if (cartDrawer && window.bootstrap) bootstrap.Offcanvas.getOrCreateInstance(cartDrawer).show();
+  else showToast(`${byId(id).name} added to your basket`);
 }
 
 function changeCartQuantity(id, delta) {
@@ -424,8 +427,18 @@ const catalogGrid = document.querySelector('#catalog-grid');
 if (catalogGrid) {
   const priceRange = document.querySelector('#price-range'); const priceValue = document.querySelector('#price-value');
   const resultCount = document.querySelector('#result-count'); const sortSelect = document.querySelector('#catalog-sort');
+  // Build the brand filter from the product data so new brands and counts stay in sync.
+  const brandSection = document.querySelector('.catalog-filter')?.closest('.filter-section');
+  if (brandSection) {
+    const brandCounts = products.reduce((counts, product) => { counts[product.brand] = (counts[product.brand] || 0) + 1; return counts; }, {});
+    brandSection.querySelectorAll('label').forEach(label => label.remove());
+    brandSection.insertAdjacentHTML('beforeend', Object.keys(brandCounts).sort().map(brand => `<label><input class="catalog-filter" type="checkbox" value="${escapeHTML(brand)}"> ${escapeHTML(brand)} <small>(${brandCounts[brand]})</small></label>`).join(''));
+  }
   const brandChecks = [...document.querySelectorAll('.catalog-filter')]; const categoryChecks = [...document.querySelectorAll('.subcategory-filter')];
   const stockCheck = document.querySelector('#in-stock');
+  const params = new URLSearchParams(location.search);
+  let searchQuery = (params.get('q') || '').trim().toLowerCase();
+  let selectedCategory = params.get('category') || '';
   const rate = currencyRates[selectedCurrency];
   priceRange.max = String(Math.round(2000 * rate));
   priceRange.step = selectedCurrency === 'UAH' ? '1000' : '25';
@@ -435,7 +448,7 @@ if (catalogGrid) {
     const brands = brandChecks.filter(input => input.checked).map(input => input.value.toLowerCase());
     const kinds = categoryChecks.filter(input => input.checked).map(input => input.value);
     const ceiling = Number(priceRange.value) / rate;
-    const visible = catalogProductIds.map(byId).filter(product => product && product.priceEUR <= ceiling && (!brands.length || brands.includes(product.brand.toLowerCase())) && (!kinds.length || kinds.includes(product.kind)) && (!searchQuery || `${product.brand} ${product.name} ${product.kind}`.toLowerCase().includes(searchQuery)) && (!stockCheck.checked || product.inStock));
+    const visible = catalogProductIds.map(byId).filter(product => product && product.priceEUR <= ceiling && (!selectedCategory || product.category === selectedCategory) && (!brands.length || brands.includes(product.brand.toLowerCase())) && (!kinds.length || kinds.includes(product.kind)) && (!searchQuery || `${product.brand} ${product.name} ${product.kind}`.toLowerCase().includes(searchQuery)) && (!stockCheck.checked || product.inStock));
   const sorters = {
     'price-asc': (firstProduct, secondProduct) => firstProduct.priceEUR - secondProduct.priceEUR,
     'price-desc': (firstProduct, secondProduct) => secondProduct.priceEUR - firstProduct.priceEUR,
@@ -468,11 +481,7 @@ if (catalogGrid) {
     renderCatalog();
     applyLanguage();
   });
-  const params = new URLSearchParams(location.search);
-  let searchQuery = (params.get('q') || '').trim().toLowerCase();
   if (document.querySelector('#search')) document.querySelector('#search').value = params.get('q') || '';
-  let selectedCategory = params.get('category');
-  categoryChecks.forEach(input => { input.checked = input.value === selectedCategory; });
   if (searchQuery) document.querySelector('.catalog-intro > p:last-child').textContent = `Search results for “${params.get('q')}”.`;
   const categoryName = { guitar: 'Guitars & gear', studio: 'Studio & recording', keys: 'Keyboards & pianos', drums:'Drums', accessories:'Accessories' }[selectedCategory];
   if (categoryName) {
@@ -598,6 +607,21 @@ const languageCopy = {
     newsletter: 'Новини, нові товари та корисні добірки.', checkoutLabel: 'ОФОРМЛЕННЯ ЗАМОВЛЕННЯ', checkout: 'Оформлення замовлення', saveOrder: 'Підтвердити замовлення'
   }
 };
+// Swaps in translations (translations.js) for the information pages, newsletter block and footer.
+function applyPageCopy() {
+  const dict = window.pageCopy?.[selectedLanguage];
+  if (!dict) return;
+  document.querySelectorAll('footer *, .newsletter *, .info-main *').forEach(element => {
+    if (!element.isConnected) return;
+    const translated = dict[element.innerHTML.trim()];
+    if (translated !== undefined) element.innerHTML = translated;
+  });
+  document.querySelectorAll('footer [placeholder], .newsletter [placeholder]').forEach(input => {
+    const translated = dict[input.getAttribute('placeholder')];
+    if (translated !== undefined) input.setAttribute('placeholder', translated);
+  });
+  if (dict[document.title] !== undefined) document.title = dict[document.title];
+}
 function applyLanguage() {
   document.documentElement.lang = selectedLanguage;
   const copy = languageCopy[selectedLanguage];
@@ -634,6 +658,7 @@ function applyLanguage() {
   }
   const wishlistHeading = document.querySelector('.wishlist-content h1'); if (wishlistHeading) wishlistHeading.firstChild.textContent = `${copy.wishlist} `;
   const checkoutSummary = document.querySelector('.checkout-summary h2'); if (checkoutSummary) checkoutSummary.textContent = document.querySelector('#checkout-form')?.hidden ? 'Thank you for your order' : copy.checkout;
+  applyPageCopy();
 }
 document.querySelectorAll('#language-select').forEach(select => select.addEventListener('change', () => {
   selectedLanguage = select.value;

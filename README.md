@@ -12,6 +12,7 @@ Open `index.html` in a browser. The page loads Bootstrap from jsDelivr, so an in
 - Product details, ratings, wishlist and basket.
 - Checkout form validation, a shipping estimate, and order references saved in browser storage.
 - A browser-only profile and newsletter form feedback.
+- Information pages: contact, shipping, warranty and returns, our story and stores. Their contact details, addresses, delivery times and policy terms are placeholders; replace them with your real information. Their text, together with the footer and newsletter block, is translated into Russian and Ukrainian in `translations.js` (keys are the English text, so edit both together).
 - Language selection (English, Russian and Ukrainian) and currency display (EUR, USD and UAH).
 
 Language, currency, basket, wishlist, profile and orders are stored in this browser's local storage. Conversion rates are fixed rates (1 EUR = 1.08 USD or 44 UAH), not live market rates. Clearing site data removes them. The checkout does not accept payment, send orders or retain shipping addresses. The profile has no password and is not an authenticated account. Product prices, ratings and stock are reference data; verify them with a retailer before purchase.
